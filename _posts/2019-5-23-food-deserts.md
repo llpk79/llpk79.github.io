@@ -54,7 +54,7 @@ layout: page
 
 ### That `pvalue` is, again, too high to find any difference between those in and those out of food deserts.
 
-## We're just about out of space here, folks. Let's check out one more thing. This is where the rubber meets the road. Do people in King County food deserts eat fresh fruits and vegies less often?
+## We're just about out of space here, folks. Let's check out one more thing. This is where the rubber meets the road. Do people in King County food deserts eat fresh fruits and veggies less often?
 
 ![Consumption of Fruits and Veg](/img/consumption.png)
 
