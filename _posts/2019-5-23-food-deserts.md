@@ -8,7 +8,7 @@ bigimg: /img/061616_best_farmers_markets.jpg
 ---
 
 
-### We'll look at the differences between all of King County and just those living in food desert areas.
+### We'll look at the differences between all of King County and just those living in food desert areas, and do some basic analysis of two key indicators of inequallity and whether people in food deserts report eating fresh foods less frequently.
 
 ## Let's examine the racial composition of food deserts in the county.
 
