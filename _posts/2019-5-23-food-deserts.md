@@ -7,15 +7,15 @@ title: Are food deserts in King County, WA very different from the rest of King 
 
 ### We'll cross reference some demographic and fruit/vegetable consumption data from behavioral health surveys conducted by the [Center for Health Statistics](https://www.doh.wa.gov/DataandStatisticalReports/DataSystems/BehavioralRiskFactorSurveillanceSystemBRFSS), a Division of Disease Control and Health Statistics at the Washington State Department of Health, with information on food deserts from the USDA.
 
-#### Food desert designations by the USDA can be found at the [Food Access Research Atlas](https://www.ers.usda.gov/data-products/food-access-research-atlas).
+##### Food desert designations by the USDA can be found at the [Food Access Research Atlas](https://www.ers.usda.gov/data-products/food-access-research-atlas).
 
-#### Food deserts are defined as areas of [low income and low access](https://www.ers.usda.gov/webdocs/publications/93141/eib%20209%20summary.pdf?v=6737.3) and a few designations exist based on the density of the population.
+##### Food deserts are defined as areas of [low income and low access](https://www.ers.usda.gov/webdocs/publications/93141/eib%20209%20summary.pdf?v=6737.3) and a few designations exist based on the density of the population.
 
-#### King County is largly urban and all of our data pertains the low income and 1 mile from nearest grocery store designation.
+##### King County is largly urban and all of our data pertains the low income and 1 mile from nearest grocery store designation.
 
 ##### The USDA food desert data is from 2015, so we'll just look at survey data from that year. We have 11,466 surveys to look through. We also have several columns we won't get to right now, but we have time take a look at a few that are typically looked at as indicators of inequality.
 
-#### We'll look at the differences between all of King County and just those living in food desert areas.
+### We'll look at the differences between all of King County and just those living in food desert areas.
 
 ## Let's examine the racial composition of food deserts in the county.
 
