@@ -55,9 +55,9 @@ bigimg: /img/061616_best_farmers_markets.jpg
 ### Access to affordable, healthy food options remains a challenge in many communities. Thankfully, getting fruits and vegetables in King County isn't too hard, even if you're over a mile from the store and live in a lower income neighborhood. 
 
 ### It would be interesting to do similar research in other communities around the country and see just how right I am in my assumption that the USDA is right about food deserts being generally distinctive from their surrounding food oases.
-##### Survey information can be found at the [Center for Health Statistics](https://www.doh.wa.gov/DataandStatisticalReports/DataSystems/BehavioralRiskFactorSurveillanceSystemBRFSS)
 
 
+##### Survey information can be found at the [Center for Health Statistics](https://www.doh.wa.gov/DataandStatisticalReports/DataSystems/BehavioralRiskFactorSurveillanceSystemBRFSS).
 
 ##### Food desert designations by the USDA can be found at the [Food Access Research Atlas](https://www.ers.usda.gov/data-products/food-access-research-atlas).
 
