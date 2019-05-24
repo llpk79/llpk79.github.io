@@ -1,6 +1,9 @@
 ---
 layout: post
 title: Are food deserts in King County, WA very different from the rest of King County?
+subtitle:Examine differences in demographics and whether residents of food deserts eat fruits and vegetables less often.
+image: https://github.com/llpk79/Project_Blog_Post/blob/master/plots/consumption.jpg
+layout: page
 ---
 
 # Are food deserts in King County, WA very different from the rest of King County?
