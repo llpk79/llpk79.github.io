@@ -62,6 +62,6 @@ layout: page
 
 ##### King County is largly urban and all of our data pertains the low income and 1 mile from nearest grocery store designation.
 
-##### The USDA food desert data is from 2015, so we'll just look at survey data from that year. We have 11,466 surveys to look through. We also have several columns we won't get to right now, but we have time take a look at a few that are typically looked at as indicators of inequality.
+##### The USDA food desert data is from 2015, so we only look at survey data from that year.
 
-#####  You can see the process used for cleaning and organizing the data [here](https://github.com/llpk79/Project_Blog_Post/blob/master/main.py).
+#####  You can see the code used for cleaning and organizing the data, and where to request your own copy [here](https://github.com/llpk79/Project_Blog_Post/blob/master/main.py).
