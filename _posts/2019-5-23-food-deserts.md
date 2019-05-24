@@ -1,20 +1,11 @@
 ---
 layout: post
 title: Are food deserts in King County, WA very different from the rest of King County?
-subtitle: We'll cross reference some demographic and fruit/vegetable consumption data from behavioral health surveys conducted by the [Center for Health Statistics](https://www.doh.wa.gov/DataandStatisticalReports/DataSystems/BehavioralRiskFactorSurvei ), a Division of Disease Control and Health Statistics at the Washington State Department of Health, with information on food deserts from the USDA.
+subtitle: We'll cross reference some demographic and fruit/vegetable consumption data from behavioral health surveys conducted by the Center for Health Statistics, a Division of Disease Control and Health Statistics at the Washington State Department of Health, with information on food deserts from the USDA.
 image: /img/income_des.png
 layout: page
 ---
 
-##### Food desert designations by the USDA can be found at the [Food Access Research Atlas](https://www.ers.usda.gov/data-products/food-access-research-atlas).
-
-##### Food deserts are defined as areas of [low income and low access](https://www.ers.usda.gov/webdocs/publications/93141/eib%20209%20summary.pdf?v=6737.3) and a few designations exist based on the density of the population.
-
-##### King County is largly urban and all of our data pertains the low income and 1 mile from nearest grocery store designation.
-
-##### The USDA food desert data is from 2015, so we'll just look at survey data from that year. We have 11,466 surveys to look through. We also have several columns we won't get to right now, but we have time take a look at a few that are typically looked at as indicators of inequality.
-
-#####  You can see the process used for cleaning and organizing the data [here](https://github.com/llpk79/Project_Blog_Post/blob/master/main.py).
 
 ### We'll look at the differences between all of King County and just those living in food desert areas.
 
@@ -61,3 +52,16 @@ layout: page
 ### Access to affordable, healthy food options remains a challenge in many communities. Thankfully, getting fruits and vegetables in King County isn't too hard, even if you're over a mile from the store and live in a lower income neighborhood. 
 
 ### It would be interesting to do similar research in other communities around the country and see just how right I am in my assumption that the USDA is right about food deserts being generally distinctive from their surrounding food oases.
+##### Survey information can be found at the [Center for Health Statistics](https://www.doh.wa.gov/DataandStatisticalReports/DataSystems/BehavioralRiskFactorSurveillanceSystemBRFSS)
+
+
+
+##### Food desert designations by the USDA can be found at the [Food Access Research Atlas](https://www.ers.usda.gov/data-products/food-access-research-atlas).
+
+##### Food deserts are defined as areas of [low income and low access](https://www.ers.usda.gov/webdocs/publications/93141/eib%20209%20summary.pdf?v=6737.3) and a few designations exist based on the density of the population.
+
+##### King County is largly urban and all of our data pertains the low income and 1 mile from nearest grocery store designation.
+
+##### The USDA food desert data is from 2015, so we'll just look at survey data from that year. We have 11,466 surveys to look through. We also have several columns we won't get to right now, but we have time take a look at a few that are typically looked at as indicators of inequality.
+
+#####  You can see the process used for cleaning and organizing the data [here](https://github.com/llpk79/Project_Blog_Post/blob/master/main.py).
