@@ -2,7 +2,7 @@
 layout: post
 title: Are food deserts in King County, WA very different from the rest of King County?
 subtitle: Examine differences in demographics and whether residents of food deserts eat fruits and vegetables less often.
-image: https://github.com/llpk79/Project_Blog_Post/blob/master/plots/income_des.png
+image: https://github.com/llpk79/llpk79.github.io/blob/master/img/income_des.png
 layout: page
 ---
 
@@ -24,11 +24,11 @@ layout: page
 
 ## Let's examine the racial composition of food deserts in the county.
 
-![Racial Composition of Respondents in Food Deserts](https://github.com/llpk79/Project_Blog_Post/blob/master/plots/income_des.png)
+![Racial Composition of Respondents in Food Deserts](https://github.com/llpk79/llpk79.github.io/blob/master/img/race_des.png)
 
 ### That may be surprising if you weren't aware that Seattle is in King County and that Seattle is one of the whitest places around.
 
-![Racial Composition of All Respondents](https://github.com/llpk79/Project_Blog_Post/blob/master/plots/race_total.png)
+![Racial Composition of All Respondents](https://github.com/llpk79/llpk79.github.io/blob/master/img/race_total.png)
 
 ### Told you so.
 
@@ -40,11 +40,11 @@ layout: page
 
 ## Alright, so what about income? Are food deserts mostly made of lower income earners?
 
-![Income Composition of Respondents in Food Deserts](https://github.com/llpk79/Project_Blog_Post/blob/master/plots/income_des.png)
+![Income Composition of Respondents in Food Deserts](https://github.com/llpk79/llpk79.github.io/blob/master/img/income_des.png)
 
 ### That is also pretty surprising. Or, perhaps you haven't heard, the median income in King County in 2015 was a cool $[75k](https://www.kingcounty.gov/independent/forecasting/King%20County%20Economic%20Indicators/Household%20Income.aspx)!
 
-![Income Composition of All Respondents](https://github.com/llpk79/Project_Blog_Post/blob/master/plots/income_total.png)
+![Income Composition of All Respondents](https://github.com/llpk79/llpk79.github.io/blob/master/img/income_total.png)
 
 ##### Just for a little perspective, according to MIT, the average expenses for a family of four in King County are about $[80k](http://livingwage.mit.edu/counties/53033).
 
@@ -56,7 +56,7 @@ layout: page
 
 ## We're just about out of space here, folks. Let's check out one more thing. This is where the rubber meets the road. Do people in King County food deserts eat fresh fruits and vegies less often?
 
-![Consumption of Fruits and Veg](https://github.com/llpk79/Project_Blog_Post/blob/master/plots/consumption.png)
+![Consumption of Fruits and Veg](https://github.com/llpk79/llpk79.github.io/blob/master/img/consumption.png)
 
 ## Most eat fruits and vegetables every day. That's great news! 
 
