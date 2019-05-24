@@ -18,6 +18,8 @@ layout: page
 
 ##### The USDA food desert data is from 2015, so we'll just look at survey data from that year. We have 11,466 surveys to look through. We also have several columns we won't get to right now, but we have time take a look at a few that are typically looked at as indicators of inequality.
 
+#####  You can see the process used for cleaning and organizing the data [here](https://github.com/llpk79/Project_Blog_Post/blob/master/main.py).
+
 ### We'll look at the differences between all of King County and just those living in food desert areas.
 
 ## Let's examine the racial composition of food deserts in the county.
