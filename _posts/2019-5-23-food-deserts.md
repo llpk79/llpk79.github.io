@@ -1,12 +1,10 @@
 ---
 layout: post
 title: Are food deserts in King County, WA very different from the rest of King County?
-subtitle: Examine differences in demographics and whether residents of food deserts eat fruits and vegetables less often.
+subtitle: We'll cross reference some demographic and fruit/vegetable consumption data from behavioral health surveys conducted by the             Center for Health Statistics, a Division of Disease Control and Health Statistics at the Washington State Department of                 Health, with information on food deserts from the USDA.
 image: /img/income_des.png
 layout: page
 ---
-
-# Are food deserts in King County, WA very different from the rest of King County?
 
 ### We'll cross reference some demographic and fruit/vegetable consumption data from behavioral health surveys conducted by the [Center for Health Statistics](https://www.doh.wa.gov/DataandStatisticalReports/DataSystems/BehavioralRiskFactorSurveillanceSystemBRFSS), a Division of Disease Control and Health Statistics at the Washington State Department of Health, with information on food deserts from the USDA.
 
