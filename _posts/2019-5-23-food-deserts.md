@@ -62,4 +62,4 @@ layout: page
 
 ### Access to affordable, healthy food options remains a challenge in many communities. Thankfully, getting fruits and vegetables in King County isn't too hard, even if you're over a mile from the store and live in a lower income neighborhood. 
 
-### It would be interesting to do simillar research in other communities around the country and see just how right I am in my assumption that the USDA is right about food deserts being generally distinctive from their surrounding food oases.
+### It would be interesting to do similar research in other communities around the country and see just how right I am in my assumption that the USDA is right about food deserts being generally distinctive from their surrounding food oases.
