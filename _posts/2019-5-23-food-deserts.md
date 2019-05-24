@@ -24,7 +24,7 @@ layout: page
 
 ## Let's examine the racial composition of food deserts in the county.
 
-![Racial Composition of Respondents in Food Deserts](https://github.com/llpk79/llpk79.github.io/blob/master/img/race_des.png)
+![Racial Composition of Respondents in Food Deserts](https://github.com/llpk79/llpk79.github.io/blob/master/img/race_des.jpg)
 
 ### That may be surprising if you weren't aware that Seattle is in King County and that Seattle is one of the whitest places around.
 
