@@ -48,7 +48,9 @@ bigimg: /img/061616_best_farmers_markets.jpg
 
 ## Most eat fruits and vegetables every day. That's great news! 
 
-### So, like, what's the deal with this food desert thing anyway? I mean, I wouldn't necessarily think that over 80% of people in food deserts would eat vegetables every day. It doesn't seem to make much of a difference. Is this food desert thing even a thing? In short, yes. If you need further convincing please check out the links below. King County isn't typical in many ways. Two obvious differences are those median income and cost of living stats, yikes. Another factor not in our data is that public transportation is extensive throughout the area and available door to door for many vulnerable populations. Online ordering and door to door delivery services are also abundant, as are farmer's markets. Also, biking and walking and are encouraged with infrastructure improvements and public outreach. 
+### So, like, what's the deal with this food desert thing anyway? I mean, I wouldn't necessarily think that over 80% of people in food deserts would eat vegetables every day. It doesn't seem to make much of a difference. Is this food desert thing even a thing? In short, yes. If you need further convincing please check out the links below. 
+
+### King County isn't typical in many ways. Two obvious differences are those median income and cost of living stats, yikes. Another factor not in our data is that public transportation is extensive throughout the area and available door to door for many vulnerable populations. Online ordering and door to door delivery services are also abundant, as are farmer's markets. Also, biking and walking and are encouraged with infrastructure improvements and public outreach. 
 
 ### Access to affordable, healthy food options remains a challenge in many communities. Thankfully, getting fruits and vegetables in King County isn't too hard, even if you're over a mile from the store and live in a lower income neighborhood. 
 
