@@ -2,7 +2,7 @@
 layout: post
 title: Are food deserts in King County, WA very different from the rest of King County?
 subtitle: Examine differences in demographics and whether residents of food deserts eat fruits and vegetables less often.
-image: https://github.com/llpk79/llpk79.github.io/blob/master/img/income_des.png
+image: \img/income_des.png
 layout: page
 ---
 
@@ -24,7 +24,7 @@ layout: page
 
 ## Let's examine the racial composition of food deserts in the county.
 
-![Racial Composition of Respondents in Food Deserts](https://github.com/llpk79/llpk79.github.io/blob/master/img/race_des.png)
+![Racial Composition of Respondents in Food Deserts](/img/race_des.png)
 
 ### That may be surprising if you weren't aware that Seattle is in King County and that Seattle is one of the whitest places around.
 
