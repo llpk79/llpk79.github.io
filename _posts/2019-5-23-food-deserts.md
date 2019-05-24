@@ -65,7 +65,7 @@ bigimg: /img/061616_best_farmers_markets.jpg
 
 ##### Food deserts are defined as areas of [low income and low access](https://www.ers.usda.gov/webdocs/publications/93141/eib%20209%20summary.pdf?v=6737.3) and a few designations exist based on the density of the population.
 
-##### King County is largly urban and all of our data pertains the low income and 1 mile from nearest grocery store designation.
+##### King County is largly urban and all of our data pertains to the low income and 1 mile from nearest grocery store designation.
 
 ##### The USDA food desert data is from 2015, so we only look at survey data from that year.
 
