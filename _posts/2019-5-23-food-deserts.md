@@ -38,7 +38,7 @@ layout: page
 
 ## Alright, so what about income? Are food deserts mostly made of lower income earners?
 
-![Income Composition of All Respondents](https://github.com/llpk79/Project_Blog_Post/blob/master/plots/income_des.jpg)
+![Income Composition of Respondents in Food Deserts](https://github.com/llpk79/Project_Blog_Post/blob/master/plots/income_des.jpg)
 
 ### That is also pretty surprising. Or, perhaps you haven't heard, the median income in King County in 2015 was a cool $[75k](https://www.kingcounty.gov/independent/forecasting/King%20County%20Economic%20Indicators/Household%20Income.aspx)!
 
