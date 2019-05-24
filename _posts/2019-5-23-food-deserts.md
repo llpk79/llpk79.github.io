@@ -22,7 +22,7 @@ bigimg: /img/061616_best_farmers_markets.jpg
 
 ### Okay, so those look pretty much the same. Are they? Let's do some math and check with an individual t-test.
 
-`pvalue=0.9999999999999999`
+`pvalue=0.9999`
 
 ### If they were very different that `pvalue` would be less than 0.01, but its almost 100 times that. Meaning the makeup of King County as a whole is not significantly different from the makeup of food deserts in King County. They look pretty much the same because they are pretty much the same.
 
@@ -38,7 +38,7 @@ bigimg: /img/061616_best_farmers_markets.jpg
 
 ### Well, these look the same, too. Are they? Let's do the math things!
 
-`pvalue=0.9999999999999997`
+`pvalue=0.9999`
 
 ### That `pvalue` is, again, too high to find any difference between those in and those out of food deserts.
 
