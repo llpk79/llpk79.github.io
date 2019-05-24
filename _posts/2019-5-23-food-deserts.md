@@ -7,9 +7,6 @@ layout: page
 bigimg: /img/061616_best_farmers_markets.jpg
 ---
 
-#####  You can see the code used for cleaning and organizing the data, and where to request your own copy [here](https://github.com/llpk79/Project_Blog_Post/blob/master/main.py).
-
-
 ### We'll look at the differences between all of King County and just those living in food desert areas, and do some basic analysis of two key indicators of inequallity and whether people in food deserts report eating fresh foods less frequently.
 
 Let's examine the racial composition of food deserts in the county.
@@ -68,5 +65,7 @@ It would be interesting to do similar research in other communities around the c
 ##### King County is largly urban and all of our data pertains to the low income and 1 mile from nearest grocery store designation.
 
 ##### The USDA food desert data is from 2015, so we only look at survey data from that year.
+
+#####  You can see the code used for cleaning and organizing the data, and where to request your own copy [here](https://github.com/llpk79/Project_Blog_Post/blob/master/main.py).
 
 ##### Photo Credit: Arina P Habich/shutterstock
