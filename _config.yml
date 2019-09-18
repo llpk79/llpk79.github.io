@@ -15,6 +15,7 @@ baseurl: ""
 
 # Name of website
 title: Paul Kutrich - Data Science
+title-col: "#404040"
 
 # Short description of your site
 description: Using the power of data for equity and health
