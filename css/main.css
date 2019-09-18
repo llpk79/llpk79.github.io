@@ -230,7 +230,7 @@ img {
 }
 .navbar-custom .nav .navlinks-container .navlinks-children a {
   display: block;
-  padding: 10px;
+  padding-right: 30px;
   padding-left: 30px;
   background-color: {{ site.navbar-children-col }};
   text-decoration: none !important;
