@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: minimal
 title: Examination of ML diabetes prediction from diet and demographic data.
 subtitle: Live predictive model and an interactive look at making decisions based on model probabilities.
 image: /img/income_des.png
