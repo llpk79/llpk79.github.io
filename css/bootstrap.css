@@ -3917,7 +3917,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:hover,
 .nav-tabs > li.active > a:focus {
-  color: #555;
+  color: #e7e7e7;
   cursor: default;
   background-color: #fff;
   border: 1px solid #ddd;
@@ -4163,7 +4163,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   padding: 150px 15px;
   font-size: 18px;
   line-height: 20px;
-  margin-left: 150px;
+  margin-left: 100px;
 }
 .navbar-brand:hover,
 .navbar-brand:focus {
@@ -4175,7 +4175,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 @media (min-width: 768px) {
   .navbar > .container .navbar-brand,
   .navbar > .container-fluid .navbar-brand {
-    margin-left: -15px;
+    margin-left: 100px;
   }
 }
 .navbar-toggle {
@@ -4208,7 +4208,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-nav {
-  margin: 7.5px -15px;
+  margin: 100px 50px;
 }
 .navbar-nav > li > a {
   padding-top: 10px;
@@ -4241,7 +4241,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 @media (min-width: 768px) {
   .navbar-nav {
     float: left;
-    margin: 0;
+    margin-left: 100px;
   }
   .navbar-nav > li {
     float: left;
@@ -4370,7 +4370,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 @media (min-width: 768px) {
   .navbar-left {
     float: left !important;
-    margin-left: 150px;
+    margin-left: 100px;
   }
   .navbar-right {
     float: right !important;
@@ -4385,7 +4385,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   border-color: #e7e7e7;
 }
 .navbar-default .navbar-brand {
-  color: #777;
+  color: #e7e7e7;
 }
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {

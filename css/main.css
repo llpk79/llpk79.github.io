@@ -227,6 +227,7 @@ img {
   width: 100%;
   display: none;
   word-break: break-word;
+  margin-left: 100;
 }
 .navbar-custom .nav .navlinks-container .navlinks-children a {
   display: block;
