@@ -4163,6 +4163,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   padding: 150px 15px;
   font-size: 18px;
   line-height: 20px;
+  margin-left: 150px;
 }
 .navbar-brand:hover,
 .navbar-brand:focus {
@@ -4369,7 +4370,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 @media (min-width: 768px) {
   .navbar-left {
     float: left !important;
-    margin-left: 15p;
+    margin-left: 150px;
   }
   .navbar-right {
     float: right !important;
