@@ -1,8 +1,9 @@
 
-## Copy of randomforest using average_precision as metric in GridSearchCV.
+## Multilabel classification for the game Ten Thousand.
 
 * 1hr aproximate runtime
 
+Import packages.
 
 ```python
 import numpy as np
@@ -98,6 +99,7 @@ len(all_features), len(all_labels)
     (23114, 23114)
 
 
+Create a DataFrame.
 
 
 ```python
@@ -110,7 +112,6 @@ def create_dataset(features, labels):
     return df
 ```
 
-Create a DataFrame.
 
 
 ```python
@@ -536,6 +537,9 @@ def test_model_pred(model, threshold=0.475, samples=25):
         print
 ```
 
+We are looking to move a prediction from 'Nuts' to 'Nailed it'
+ by choosing  better probability threshold, but also avoid doing the opposite.
+
 
 ```python
 test_model_pred(best, threshold=.475, samples=40)
@@ -863,6 +867,7 @@ test_model_pred(best, threshold=.475, samples=40)
     
 
 
+We can be more systematic and look at a range of probabilities.
 
 ```python
 def test_threshold_precision(model, thresholds):
@@ -948,6 +953,7 @@ threshold_test
 
 
 
+Refine our search.
 
 ```python
 thresholds = np.linspace(.476, .486, 10)
@@ -999,6 +1005,7 @@ threshold_test_1
 
 
 
+Refine further.
 
 ```python
 thresholds = np.linspace(.482, .485, 5)
@@ -1035,13 +1042,10 @@ threshold_test_2
 
 
 
+The best score so far is at a probability threshold of .48333...
 
 ```python
 threshold = test_threshold_precision(best, [.48333333333333334])
-```
-
-
-```python
 threshold
 ```
 
@@ -1058,3 +1062,6 @@ threshold
 ```python
 
 ```
+
+Average precision is a harsh metric for a multilabel problem. 90.5% seems like a usable result 
+when average precision is also very high.
