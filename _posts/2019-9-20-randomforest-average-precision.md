@@ -1,7 +1,16 @@
 
-## Multilabel classification for the game Ten Thousand.
+## Multi-label classification for the game Ten Thousand.
+A fun, and waaaay over-engineered solution to creating a computer 
+player for the game, the logic for which is almost entirely 
+implemented in the second cell of this notebook.
 
-* 1hr aproximate runtime
+Multi-label classification where n-features == n-labels sounds like 
+a fun challenge aside from applying to my hobby project, let's see
+how we do.
+
+Connect to the rest of this project, and others, on [github.](https://github.com/llpk79)
+
+**1 - 2hr approximate notebook runtime.**
 
 Import packages.
 
@@ -12,8 +21,8 @@ import pandas as pd
 from collections import Counter
 from itertools import combinations_with_replacement as combos
 from itertools import permutations as perms
-from sklearn.ensemble import RandomForestClassifier, ExtraTreesClassifier
-from sklearn.metrics import coverage_error, f1_score, label_ranking_average_precision_score, average_precision_score
+from sklearn.ensemble import ExtraTreesClassifier
+from sklearn.metrics import f1_score, label_ranking_average_precision_score, average_precision_score
 from sklearn.model_selection import train_test_split, GridSearchCV
 
 ```
@@ -80,7 +89,7 @@ def make_some_features(numbers, clip):
 
 ```
 
-Make arrays of throws and coresponding labels.
+Make arrays of throws and corresponding labels.
 
 
 ```python
@@ -90,13 +99,13 @@ all_features = np.array([np.array(feature) for feature in features])
 
 all_labels = np.array([make_labels(feature) for feature in all_features])
 
-len(all_features), len(all_labels)
+all_features.shape, all_labels.shape
 ```
 
 
 
 
-    (23114, 23114)
+    ((23114, 6), (23114, 6))
 
 
 Create a DataFrame.
@@ -104,10 +113,22 @@ Create a DataFrame.
 
 ```python
 def create_dataset(features, labels):
+    """Create a DataFrame for dice throws and their labels.
+    
+    A column for each die in a roll and a label for each die.
+    
+    :var features: np.array of rolls
+    :var labels: np.array of labels
+    """
+    # DataFrame for features.
     data = {str(i): features[:,i] for i in range(6)}
     dataset = pd.DataFrame(data)
+
+    # DataFrame for labels.
     label = {'{}_l'.format(i): labels[:,i] for i in range(6)}
     label_df = pd.DataFrame(label)
+    
+    # Stick em together.
     df = pd.concat([dataset, label_df], axis=1, sort=False)
     return df
 ```
@@ -352,7 +373,7 @@ X_test.shape, y_test.shape
 
 
 
-Extra Trees with hyperparameters chosen from earler cross validations.
+Extra Trees with hyperparameters chosen from earlier cross validations.
 
 
 ```python
@@ -379,14 +400,8 @@ grid.best_params_, grid.best_score_
 ```
 
     Fitting 5 folds for each of 9 candidates, totalling 45 fits
-
-
     [Parallel(n_jobs=-1)]: Using backend LokyBackend with 4 concurrent workers.
     [Parallel(n_jobs=-1)]: Done  45 out of  45 | elapsed: 44.4min finished
-
-
-
-
 
     ({'max_depth': 30, 'min_samples_split': 6}, 0.9759599000677779)
 
@@ -408,71 +423,34 @@ grid.best_params_, grid.best_score_
 ```
 
     Fitting 5 folds for each of 6 candidates, totalling 30 fits
-
-
     [Parallel(n_jobs=-1)]: Using backend LokyBackend with 4 concurrent workers.
     [Parallel(n_jobs=-1)]: Done  30 out of  30 | elapsed: 29.8min finished
-
-
-
-
 
     ({'n_estimators': 2000}, 0.9759340084764407)
 
 
-
+Calculate metrics from GridSearchCV best model.
 
 ```python
 best = grid.best_estimator_
 ```
 
+Make predictions for each test roll.
 
 ```python
 y_pred = np.array([best.predict([test])[0] for test in X_test.values])
 ```
 
-
-```python
-y_test.sum().sum() / len(y_test)
-```
-
-
-
-
-    3.033742862086866
-
-
-
-
-```python
-coverage_error(y_pred, y_test)
-```
-
-
-
-
-    3.0531233777470153
-
-
-
+Calculate f1 score across all labels for each instance.
 
 ```python
 f1_score(y_test, y_pred, average='samples')
 ```
 
-    /Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sklearn/metrics/classification.py:1143: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in samples with no predicted labels.
-      'precision', 'predicted', average, warn_for)
-    /Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sklearn/metrics/classification.py:1145: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in samples with no true labels.
-      'recall', 'true', average, warn_for)
-
-
-
-
-
     0.9027160962703444
 
 
-
+Calculate precision across each label instance.
 
 ```python
 label_ranking_average_precision_score(y_test, y_pred)
@@ -484,7 +462,7 @@ label_ranking_average_precision_score(y_test, y_pred)
     0.9735207456115055
 
 
-
+Calculate average precision.
 
 ```python
 average_precision_score(y_test, y_pred)
@@ -534,144 +512,18 @@ def test_model_pred(model, threshold=0.475, samples=25):
         print(result)
         result = 'Nailed it' if list(true) == list(pred_thresh) else 'Nuts'
         print(result)
-        print
+        print()
 ```
 
-We are looking to move a prediction from 'Nuts' to 'Nailed it'
- by choosing  better probability threshold, but also avoid doing the opposite.
+We are looking to move a prediction from 'Nuts' to 'Nailed it' 
+by choosing a better probability threshold, but also avoid doing 
+the opposite.
 
 
 ```python
 test_model_pred(best, threshold=.475, samples=40)
 ```
 
-    [5 1 4 4 1 3]
-    [1 1 0 0 1 0]
-    [0.861 0.882 0.257 0.3   0.881 0.204]
-    [1 1 0 0 1 0]
-    [1 1 0 0 1 0]
-    Nailed it
-    Nailed it
-    
-    [5 6 4 4 1 5]
-    [1 0 0 0 1 1]
-    [0.811 0.188 0.278 0.272 0.854 0.808]
-    [1 0 0 0 1 1]
-    [1 0 0 0 1 1]
-    Nailed it
-    Nailed it
-    
-    [1 5 4 4 1 4]
-    [1 1 1 1 1 1]
-    [0.893 0.914 0.419 0.41  0.901 0.407]
-    [1 1 0 0 1 0]
-    [1 1 0 0 1 0]
-    Nuts
-    Nuts
-    
-    [3 4 3 5 2 6]
-    [0 0 0 1 0 0]
-    [0.319 0.271 0.302 0.804 0.217 0.102]
-    [0 0 0 1 0 0]
-    [0 0 0 1 0 0]
-    Nailed it
-    Nailed it
-    
-    [1 3 1 5 5 6]
-    [1 0 1 1 1 0]
-    [0.827 0.195 0.818 0.833 0.814 0.207]
-    [1 0 1 1 1 0]
-    [1 0 1 1 1 0]
-    Nailed it
-    Nailed it
-    
-    [1 6 3 3 5 4]
-    [1 0 0 0 1 0]
-    [0.892 0.103 0.23  0.241 0.783 0.197]
-    [1 0 0 0 1 0]
-    [1 0 0 0 1 0]
-    Nailed it
-    Nailed it
-    
-    [2 4 5 2 5 2]
-    [1 0 1 1 1 1]
-    [0.592 0.268 0.823 0.577 0.835 0.574]
-    [1 0 1 1 1 1]
-    [1 0 1 1 1 1]
-    Nailed it
-    Nailed it
-    
-    [4 3 4 1 3 3]
-    [0 1 0 1 1 1]
-    [0.492 0.524 0.503 0.93  0.459 0.508]
-    [0 1 1 1 0 1]
-    [1 1 1 1 0 1]
-    Nuts
-    Nuts
-    
-    [5 4 2 5 5 6]
-    [1 0 0 1 1 0]
-    [0.779 0.16  0.171 0.776 0.778 0.146]
-    [1 0 0 1 1 0]
-    [1 0 0 1 1 0]
-    Nailed it
-    Nailed it
-    
-    [1 6 6 2 2 4]
-    [1 0 0 0 0 0]
-    [0.906 0.287 0.271 0.351 0.37  0.255]
-    [1 0 0 0 0 0]
-    [1 0 0 0 0 0]
-    Nailed it
-    Nailed it
-    
-    [2 2 3 1 6 3]
-    [0 0 0 1 0 0]
-    [0.434 0.417 0.4   0.956 0.097 0.437]
-    [0 0 0 1 0 0]
-    [0 0 0 1 0 0]
-    Nailed it
-    Nailed it
-    
-    [4 3 3 6 4 3]
-    [0 1 1 0 0 1]
-    [0.516 0.534 0.499 0.079 0.496 0.513]
-    [1 1 0 0 0 1]
-    [1 1 1 0 1 1]
-    Nuts
-    Nuts
-    
-    [3 2 2 3 3 6]
-    [1 0 0 1 1 0]
-    [0.563 0.56  0.512 0.54  0.573 0.165]
-    [1 1 1 1 1 0]
-    [1 1 1 1 1 0]
-    Nuts
-    Nuts
-    
-    [4 4 1 5 4 2]
-    [1 1 1 1 1 0]
-    [0.362 0.419 0.896 0.886 0.438 0.189]
-    [0 0 1 1 0 0]
-    [0 0 1 1 0 0]
-    Nuts
-    Nuts
-    
-    [4 1 6 1 6 4]
-    [1 1 1 1 1 1]
-    [0.382 0.831 0.414 0.83  0.407 0.384]
-    [0 1 0 1 0 0]
-    [0 1 0 1 0 0]
-    Nuts
-    Nuts
-    
-    [3 6 3 2 2 1]
-    [0 0 0 0 0 1]
-    [0.397 0.121 0.4   0.45  0.511 0.937]
-    [0 0 0 0 1 1]
-    [0 0 0 0 1 1]
-    Nuts
-    Nuts
     
     [1 6 2 2 6 2]
     [1 0 1 1 0 1]
@@ -867,11 +719,15 @@ test_model_pred(best, threshold=.475, samples=40)
     
 
 
-We can be more systematic and look at a range of probabilities.
+There are a lot of close calls and it's not at all clear where
+the ideal probability threshold is.
+
+We can be more systematic by looking at a range of probabilities
+and reporting metrics for each one.
 
 ```python
 def test_threshold_precision(model, thresholds):
-    """Test array of threshold values and caluculate precition metrics for each.
+    """Test array of threshold values and calculate precision metrics for each.
     
     Calculate each threshold on a random sample of test data.
     Store and return in a dict.
@@ -889,7 +745,7 @@ def test_threshold_precision(model, thresholds):
         # Ground truth labels.
         true = np.array([make_labels(dice) for dice in throws])
         
-        # Caluculate metrics.
+        # Calculate metrics.
         f_one = f1_score(true, y_pred, average='samples')
         label_ranking = label_ranking_average_precision_score(true, y_pred)
         average_precision = average_precision_score(true, y_pred)
@@ -902,6 +758,7 @@ def test_threshold_precision(model, thresholds):
     return results
 ```
 
+Start with a fairly wide range.
 
 ```python
 thresholds = np.linspace(.47, .5, 10)
@@ -910,10 +767,6 @@ thresholds = np.linspace(.47, .5, 10)
 
 ```python
 threshold_test = test_threshold_precision(best, thresholds)
-```
-
-
-```python
 threshold_test
 ```
 
@@ -962,10 +815,6 @@ thresholds = np.linspace(.476, .486, 10)
 
 ```python
 threshold_test_1 = test_threshold_precision(best, thresholds)
-```
-
-
-```python
 threshold_test_1
 ```
 
@@ -1014,10 +863,6 @@ thresholds = np.linspace(.482, .485, 5)
 
 ```python
 threshold_test_2 = test_threshold_precision(best, thresholds)
-```
-
-
-```python
 threshold_test_2
 ```
 
@@ -1059,9 +904,6 @@ threshold
 
 
 
-```python
 
-```
-
-Average precision is a harsh metric for a multilabel problem. 90.5% seems like a usable result 
-when average precision is also very high.
+Average precision of 90.5% seems like a usable result 
+when label ranking average precision is also very high.
