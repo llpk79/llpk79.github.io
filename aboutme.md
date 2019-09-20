@@ -4,14 +4,14 @@ title: About me
 subtitle: Paul Kutrich
 ---
 
-##### I am a data scientist with a background in intensive care nursing.
+Data scientist with a background in intensive care nursing.
 
 I am interested in:
 - Improving health outcomes.
 - Working toward a more equitable world.
 - Exploring our incredible planet.
 
-### My history:
+Education:
 - Bachelors of Science in Nursing.
     - Washington State University College of Nursing.
 - Lambda School Data Science.
