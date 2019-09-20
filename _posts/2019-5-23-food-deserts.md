@@ -6,9 +6,9 @@ image: /img/income_des.png
 bigimg: /img/061616_best_farmers_markets.jpg
 ---
 
-#### We'll look at the differences between all of King County and just those living in food desert areas, and do some basic analysis of two key indicators of inequallity and whether people in food deserts report eating fresh foods less frequently.
+#### We'll look at the differences between all of King County and those living in food desert areas, do some basic analysis of two key indicators of inequality, and see whether people in food deserts report eating fresh foods less frequently.
 
-First, let's examine the racial composition of food deserts in 
+First, let's examine the racial composition of food deserts[^1] in 
 the county.
 
 ![Racial Composition of Respondents in Food Deserts](/img/race_des.png)
@@ -33,7 +33,7 @@ much the same because they are pretty much the same.
 
 ![Income Composition of Respondents in Food Deserts](/img/income_des.png)
 
-That is also pretty surprising. Or, perhaps you haven't heard, the 
+That is also pretty surprising, unless you're aware that the 
 median income in King County in 2015 was a cool 
 $[75k](https://www.kingcounty.gov/independent/forecasting/King%20County%20Economic%20Indicators/Household%20Income.aspx)!
 
@@ -43,12 +43,12 @@ Just for a little perspective, according to MIT, the average
 expenses for a family of four in King County are about 
 $[80k](http://livingwage.mit.edu/counties/53033).
 
-Well, these look the same, too. Are they? Let's do the math things!
+These look the same, too. Are they? Let's do the math things!
 
 `pvalue = 0.9999`
 
 That `pvalue` is, again, too high to find any difference between 
-those in and those out of food deserts.
+those in, and those out of, food deserts.
 
 #### Let's check out one more thing. This is where the rubber meets the road. Do people in King County food deserts eat fresh fruits and veggies less often?
 
@@ -56,20 +56,21 @@ those in and those out of food deserts.
 
 Most eat fruits and vegetables every day. That's great news! 
 
-So, like, what's the deal with this food desert thing anyway? 
+Okay, so what's the deal with this food desert thing anyway? 
 I wouldn't necessarily think that over 80% of people in 
-food deserts would eat fruits and vegetables every day. It doesn't 
-seem to make much of a difference. Is this food desert thing even 
+food deserts eat fruits and vegetables every day. Being in a 
+food desert doesn't seem to make much of a difference. Is this even 
 a thing? In short, yes. If you need further convincing please 
-check out he links below. 
+check out the links below. 
 
-King County isn't typical in many ways. Two obvious differences 
-are the median income and cost of living. Another factor that 
-is not in our data is that public transportation is extensive 
-throughout the area, and available door to door for many vulnerable 
-populations. Online ordering, door to door delivery services and 
-farmer's markets are also abundant. Also, biking and walking are 
-encouraged with infrastructure improvements and public outreach. 
+King County is atypical in many ways. Two obvious differences 
+are the median income and cost of living. Another factor not 
+represented in our data[^2]; public transportation is 
+extensive throughout the area and is available on-demand and 
+door-to-door for many vulnerable populations. Online ordering, 
+door-to-door delivery services and neighborhood farmer's markets 
+are also abundant. Also, biking and walking are encouraged with 
+infrastructure improvements and public outreach. 
 
 Access to affordable, healthy food options remains a challenge in 
 many communities. Thankfully, getting fruits and vegetables in 
@@ -77,20 +78,24 @@ King County isn't too hard, even if you're over a mile from the
 store and live in a lower income neighborhood. 
 
 It would be interesting to do similar research in other 
-communities around the country and see just how right I am in
+communities around the country and see if I am correct in
 assuming that the USDA is right about food deserts being 
 generally distinctive from their surrounding food oases.
 
 
-##### Survey information can be found at the [Center for Health Statistics](https://www.doh.wa.gov/DataandStatisticalReports/DataSystems/BehavioralRiskFactorSurveillanceSystemBRFSS).
+[^1]: Food desert designations by the USDA can be found at the 
+[Food Access Research Atlas](https://www.ers.usda.gov/data-products/food-access-research-atlas). 
+Food deserts are defined as areas of 
+[low income and low access](https://www.ers.usda.gov/webdocs/publications/93141/eib%20209%20summary.pdf?v=6737.3) 
+and multiple designations exist based on the density of the 
+population. King County is largly urban and all of our data 
+pertains to the low income and 1 mile from nearest grocery store 
+designation.
 
-##### Food desert designations by the USDA can be found at the [Food Access Research Atlas](https://www.ers.usda.gov/data-products/food-access-research-atlas).
-
-##### Food deserts are defined as areas of [low income and low access](https://www.ers.usda.gov/webdocs/publications/93141/eib%20209%20summary.pdf?v=6737.3) and a few designations exist based on the density of the population.
-
-##### King County is largly urban and all of our data pertains to the low income and 1 mile from nearest grocery store designation.
-
-##### The USDA food desert data is from 2015, so we only look at survey data from that year.
+[^2]: Survey information can be found at the 
+[Center for Health Statistics](https://www.doh.wa.gov/DataandStatisticalReports/DataSystems/BehavioralRiskFactorSurveillanceSystemBRFSS). 
+The USDA food desert data is from 2015, so we only look at 
+survey data from that year.
 
 #####  You can see the code used for cleaning and organizing the data, and where to request your own copy [here](https://github.com/llpk79/Project_Blog_Post/blob/master/main.py).
 
