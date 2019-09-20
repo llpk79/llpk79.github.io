@@ -68,14 +68,14 @@ author:
 # You can reorder the items to define the link order.
 # If you want to add a new link that isn't here, you'll need to also edit the file _data/SocialNetworks.yml
 social-network-links:
-  rss: true
+#  rss: False
   email: "pkutrich@gmail.com"
 #   facebook: daattali
   github: 'llpk79'
 #   twitter: daattali
 #  reddit: yourname
 #  google-plus: +DeanAttali
-  linkedin: 'https://www.linkedin.com/in/paul-kutrich/'
+  linkedin: 'paul-kutrich'
 #  xing: yourname
 #  stackoverflow: "3943160/daattali"
 #  snapchat: deanat78
