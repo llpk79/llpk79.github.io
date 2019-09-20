@@ -35,13 +35,13 @@ much the same because they are pretty much the same.
 
 That is also pretty surprising, unless you're aware that the 
 median income in King County in 2015 was a cool 
-$[75k](https://www.kingcounty.gov/independent/forecasting/King%20County%20Economic%20Indicators/Household%20Income.aspx)!
+[$75k](https://www.kingcounty.gov/independent/forecasting/King%20County%20Economic%20Indicators/Household%20Income.aspx)!
 
 ![Income Composition of All Respondents](/img/income_total.png)
 
-Just for a little perspective, according to MIT, the average 
+Just for a little perspective, according to MIT, the average yearly
 expenses for a family of four in King County are about 
-$[80k](http://livingwage.mit.edu/counties/53033).
+[$80k](http://livingwage.mit.edu/counties/53033).
 
 These look the same, too. Are they? Let's do the math things!
 
@@ -84,9 +84,7 @@ generally distinctive from their surrounding food oases.
 
 
 [^1]: Food desert designations by the USDA can be found at the [Food Access Research Atlas](https://www.ers.usda.gov/data-products/food-access-research-atlas). Food deserts are defined as areas of [low income and low access](https://www.ers.usda.gov/webdocs/publications/93141/eib%20209%20summary.pdf?v=6737.3) and multiple designations exist based on the density of the population. King County is largly urban and all of our data pertains to the low income and 1 mile from nearest grocery store designation.
-
 [^2]: Survey information can be found at the [Center for Health Statistics](https://www.doh.wa.gov/DataandStatisticalReports/DataSystems/BehavioralRiskFactorSurveillanceSystemBRFSS). The USDA food desert data is from 2015, so we only look at survey data from that year.
-
 #####  You can see the code used for cleaning and organizing the data, and where to request your own copy [here](https://github.com/llpk79/Project_Blog_Post/blob/master/main.py).
 
 ##### Photo Credit: Arina P Habich/shutterstock
