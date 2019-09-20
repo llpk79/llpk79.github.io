@@ -3,7 +3,7 @@ layout: page
 image: /img/dice.jpg
 ---
 
-## Multi-label classification for the game Ten Thousand.
+## Multi-label classification for the dice game Ten Thousand.
 A fun, and waaaay over-engineered solution to creating a computer 
 player for the game, the logic for which is almost entirely 
 implemented in the second cell of this notebook.
