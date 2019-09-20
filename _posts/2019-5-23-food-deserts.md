@@ -83,19 +83,9 @@ assuming that the USDA is right about food deserts being
 generally distinctive from their surrounding food oases.
 
 
-[^1]: Food desert designations by the USDA can be found at the 
-[Food Access Research Atlas](https://www.ers.usda.gov/data-products/food-access-research-atlas). 
-Food deserts are defined as areas of 
-[low income and low access](https://www.ers.usda.gov/webdocs/publications/93141/eib%20209%20summary.pdf?v=6737.3) 
-and multiple designations exist based on the density of the 
-population. King County is largly urban and all of our data 
-pertains to the low income and 1 mile from nearest grocery store 
-designation.
+[^1]: Food desert designations by the USDA can be found at the [Food Access Research Atlas](https://www.ers.usda.gov/data-products/food-access-research-atlas). Food deserts are defined as areas of [low income and low access](https://www.ers.usda.gov/webdocs/publications/93141/eib%20209%20summary.pdf?v=6737.3) and multiple designations exist based on the density of the population. King County is largly urban and all of our data pertains to the low income and 1 mile from nearest grocery store designation.
 
-[^2]: Survey information can be found at the 
-[Center for Health Statistics](https://www.doh.wa.gov/DataandStatisticalReports/DataSystems/BehavioralRiskFactorSurveillanceSystemBRFSS). 
-The USDA food desert data is from 2015, so we only look at 
-survey data from that year.
+[^2]: Survey information can be found at the [Center for Health Statistics](https://www.doh.wa.gov/DataandStatisticalReports/DataSystems/BehavioralRiskFactorSurveillanceSystemBRFSS). The USDA food desert data is from 2015, so we only look at survey data from that year.
 
 #####  You can see the code used for cleaning and organizing the data, and where to request your own copy [here](https://github.com/llpk79/Project_Blog_Post/blob/master/main.py).
 
