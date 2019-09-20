@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Using a FaceBook Prophet model, make a simple weather prediction web-app.
+title: A simple weather prediction web-app using the FaceBook Prophet model.
 subtitle: Live predictive model for any valid zipcode.
 image: /img/thermometer.jpg
 ---
