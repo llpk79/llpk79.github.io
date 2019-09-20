@@ -40,22 +40,34 @@ scoring_rules = [[100, 200, 1000, 2000, 4000, 5000],
                  ]
 
 
-def is_three_pair(choice):
-    choice = sorted(choice)
-    return (len(choice) == 6 and choice[0] == choice[1] and
-            choice[2] == choice[3] and choice[4] == choice[5])
+def is_three_pair(roll):
+    """Return true if roll contains three pairs.
+    
+    :var roll: list - A roll of 1 - 6 dice.
+    """
+    roll = sorted(roll)
+    return (len(roll) == 6 and roll[0] == roll[1] and
+            roll[2] == roll[3] and roll[4] == roll[5])
 
 
-def is_straight(choice):
-    return sorted(choice) == list(range(1, 7))
+def is_straight(roll):
+    """Return true if roll contains dice 1 - 6.
+
+    :var roll: list - A roll of 1 - 6 dice.
+    """
+    return sorted(roll) == list(range(1, 7))
 
 
 def score_all():
+    """Return a list of floats == 1.0."""
     return [1.] * 6
 
 
 def make_labels(roll):
-    """Returns a label for each roll."""
+    """Returns a label for each roll.
+    
+    :var roll: list - A roll of 1 - 6 dice.
+    """
     counts = Counter(roll)
     if is_three_pair(roll) and (sum(scoring_rules[die - 1][count - 1] for die, count in counts.items()) < 1500):
         choice = score_all()
@@ -74,26 +86,32 @@ def make_labels(roll):
 
 ```
 
-Make combinations of 6 dice throws.
+Make a bunch of 6-dice throws.
 
 
 ```python
-def make_some_features(numbers, clip):
+def make_some_features(clip):
+    """Creat a set of outcomes for rolling 6 dice.
+    
+    Find combinations of 6 dice, then permute them.
+    
+    :var clip: keep only combinations where its index % clip = 0
+    """
     features = set()
+    numbers = list(range(1, 7))
     combinations = (combo for combo in combos(numbers, 6))
     for i, comb in enumerate(combinations):
         if i % clip == 0:  # Keeping size reasonable
             for perm in perms(comb):
                 features.add(perm)
     return features
-
 ```
 
 Make arrays of throws and corresponding labels.
 
 
 ```python
-features = make_some_features(list(range(1, 7)), 2)
+features = make_some_features(2)
 
 all_features = np.array([np.array(feature) for feature in features])
 
@@ -491,7 +509,9 @@ def test_model_pred(model, threshold=0.475, samples=25):
     :var samples: int
     """
     for test in X_test.sample(samples).values:
+        
         print(test)
+        
         # Create ground truth label.
         true = make_labels(test).astype(int)
         print(true)
@@ -736,6 +756,7 @@ def test_threshold_precision(model, thresholds):
     # This is going to take a while...
     size = len(X_test.values) / 10
     for threshold in thresholds:
+        
         # Get sample of dice throws.
         throws = X_test.sample(size).values
         
