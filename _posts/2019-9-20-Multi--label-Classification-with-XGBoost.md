@@ -1,6 +1,6 @@
 ---
 layout: page
-img: img/dice.jpg
+image: img/dice.jpg
 ---
 
 ## Multi-label classification for the game Ten Thousand.
