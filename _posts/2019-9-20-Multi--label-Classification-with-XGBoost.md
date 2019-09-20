@@ -1,3 +1,7 @@
+---
+layout: page
+img: img/dice.jpg
+---
 
 ## Multi-label classification for the game Ten Thousand.
 A fun, and waaaay over-engineered solution to creating a computer 
