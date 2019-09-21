@@ -798,34 +798,53 @@ threshold_test
 
 
 
-    {0.47: {'Average precision': 0.9167155889975689,
+    {0.47: 
+     {'Average precision': 0.9167155889975689,
       'Label ranking average precision': 0.972578471018679,
       'f1_score': 0.8961891757385692},
-     0.47333333333333333: {'Average precision': 0.901170639362717,
+      
+     0.47333333333333333: 
+     {'Average precision': 0.901170639362717,
       'Label ranking average precision': 0.9731080300404387,
       'f1_score': 0.8963563588346952},
-     0.4766666666666666: {'Average precision': 0.9149462064638517,
+      
+     0.4766666666666666: 
+     {'Average precision': 0.9149462064638517,
       'Label ranking average precision': 0.9765068361255532,
       'f1_score': 0.9027246968321491},
-     0.48: {'Average precision': 0.9202440982817786,
+      
+     0.48: 
+     {'Average precision': 0.9202440982817786,
       'Label ranking average precision': 0.9814558058925474,
       'f1_score': 0.9171755935187478},
-     0.48333333333333334: {'Average precision': 0.9261396156467017,
+      
+     0.48333333333333334: 
+     {'Average precision': 0.9261396156467017,
       'Label ranking average precision': 0.9823921625264779,
       'f1_score': 0.9266106221912115},
-     0.48666666666666664: {'Average precision': 0.9107067924289406,
+      
+     0.48666666666666664: 
+     {'Average precision': 0.9107067924289406,
       'Label ranking average precision': 0.9778572116310417,
       'f1_score': 0.9005529421473963},
-     0.49: {'Average precision': 0.9212217708645708,
+      
+     0.49: 
+     {'Average precision': 0.9212217708645708,
       'Label ranking average precision': 0.9786828422876949,
       'f1_score': 0.9125374817749167},
-     0.49333333333333335: {'Average precision': 0.9211248772392877,
+      
+     0.49333333333333335: 
+     {'Average precision': 0.9211248772392877,
       'Label ranking average precision': 0.97738301559792,
       'f1_score': 0.9131371901735854},
-     0.49666666666666665: {'Average precision': 0.9002207841975037,
+      
+     0.49666666666666665: 
+     {'Average precision': 0.9002207841975037,
       'Label ranking average precision': 0.9749566724436739,
       'f1_score': 0.8972297873511046},
-     0.5: {'Average precision': 0.9109549311230944,
+      
+     0.5: 
+     {'Average precision': 0.9109549311230944,
       'Label ranking average precision': 0.9731489505103024,
       'f1_score': 0.9035115952793596}}
 
@@ -846,34 +865,53 @@ threshold_test_1
 
 
 
-    {0.476: {'Average precision': 0.9141850012133119,
+    {0.476: 
+     {'Average precision': 0.9141850012133119,
       'Label ranking average precision': 0.976015790487194,
       'f1_score': 0.905653839709299},
-     0.4771111111111111: {'Average precision': 0.9133757704663449,
+      
+     0.4771111111111111: 
+     {'Average precision': 0.9133757704663449,
       'Label ranking average precision': 0.9680290776044675,
       'f1_score': 0.9035391048389315},
-     0.4782222222222222: {'Average precision': 0.9057443026223219,
+      
+     0.4782222222222222: 
+     {'Average precision': 0.9057443026223219,
       'Label ranking average precision': 0.9741984402079722,
       'f1_score': 0.9016313168826168},
-     0.47933333333333333: {'Average precision': 0.9220965637058263,
+      
+     0.47933333333333333: 
+     {'Average precision': 0.9220965637058263,
       'Label ranking average precision': 0.9717215482380126,
       'f1_score': 0.9131454430414571},
-     0.48044444444444445: {'Average precision': 0.9118693487867908,
+      
+     0.48044444444444445: 
+     {'Average precision': 0.9118693487867908,
       'Label ranking average precision': 0.9721740804929712,
       'f1_score': 0.9045982228824516},
-     0.4815555555555555: {'Average precision': 0.9042850090379052,
+      
+     0.4815555555555555: 
+     {'Average precision': 0.9042850090379052,
       'Label ranking average precision': 0.9768727132678604,
       'f1_score': 0.9022000145050405},
-     0.48266666666666663: {'Average precision': 0.9143032678176007,
+      
+     0.48266666666666663: 
+     {'Average precision': 0.9143032678176007,
       'Label ranking average precision': 0.9743500866551126,
       'f1_score': 0.8965406728838271},
-     0.48377777777777775: {'Average precision': 0.9132657689129259,
+      
+     0.48377777777777775: 
+     {'Average precision': 0.9132657689129259,
       'Label ranking average precision': 0.9779029462738303,
       'f1_score': 0.9196355733617433},
-     0.48488888888888887: {'Average precision': 0.8875843773012423,
+      
+     0.48488888888888887: 
+     {'Average precision': 0.8875843773012423,
       'Label ranking average precision': 0.9626347968419027,
       'f1_score': 0.877161563643366},
-     0.486: {'Average precision': 0.9080659113325225,
+      
+     0.486: 
+     {'Average precision': 0.9080659113325225,
       'Label ranking average precision': 0.9742562102830732,
       'f1_score': 0.8990564221066821}}
 
@@ -894,19 +932,28 @@ threshold_test_2
 
 
 
-    {0.482: {'Average precision': 0.9007834319784004,
+    {0.482: 
+     {'Average precision': 0.9007834319784004,
       'Label ranking average precision': 0.9668303485461194,
       'f1_score': 0.8812418565451494},
-     0.48275: {'Average precision': 0.9142902148791339,
+      
+     0.48275: 
+     {'Average precision': 0.9142902148791339,
       'Label ranking average precision': 0.9678220681686883,
       'f1_score': 0.9058636626227615},
-     0.4835: {'Average precision': 0.8963786650387666,
+      
+     0.4835: 
+     {'Average precision': 0.8963786650387666,
       'Label ranking average precision': 0.9734931638744461,
       'f1_score': 0.8870471238755467},
-     0.48424999999999996: {'Average precision': 0.9052563909226885,
+      
+     0.48424999999999996: 
+     {'Average precision': 0.9052563909226885,
       'Label ranking average precision': 0.9703061813980358,
       'f1_score': 0.8988514758878711},
-     0.485: {'Average precision': 0.9031736128238692,
+      
+     0.485: 
+     {'Average precision': 0.9031736128238692,
       'Label ranking average precision': 0.9724845946466394,
       'f1_score': 0.9049530962009298}}
 
@@ -922,7 +969,8 @@ threshold
 
 
 
-    {0.48333333333333334: {'Average precision': 0.9051624742901035,
+    {0.48333333333333334: 
+     {'Average precision': 0.9051624742901035,
       'Label ranking average precision': 0.9694685153090699,
       'f1_score': 0.8973054386399275}}
 
