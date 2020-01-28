@@ -6,6 +6,7 @@ image: /img/dice.jpg
 ---
 
 ## Play the dice game Ten Thousand!
+
 Now recruiting sound and music help!
 
 An Android application written in Python and Kivy.
