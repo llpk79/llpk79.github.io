@@ -2,7 +2,7 @@
 layout: page
 title: About me
 subtitle: Paul Kutrich
-image: /img/paul_kutrich.jpg
+image: /img/avatar-icon.jpg
 ---
 
 Data scientist with a background in intensive care nursing.
