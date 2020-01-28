@@ -3,6 +3,8 @@ layout: default
 title: Job Finder
 subtitle: Scrape Indeed.com, vectorize job listings with Spacy and find job descriptions similar to resume with scikit-learn KNN.
 ---
+
+## Job Finder
 Write a job description for your ideal job, and use the power of NLP to search job sites for your ideal position so you can spend your time preparing for interviews instead of searching through listings!
 
 Best results are expected by providing a job description writen in the style of a job description. The NLP algorithm is looking at document similarity as a whole, not simply searching for keywords or phrases.
