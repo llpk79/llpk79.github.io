@@ -2,7 +2,7 @@
 layout: default
 title: Job Finder
 subtitle: Scrape Indeed.com, vectorize job listings with Spacy and find job descriptions similar to resume with scikit-learn KNN.
-image: /img/shake.jpeg
+image: /img/handshake_orig.jpg
 ---
 
 ## Job Finder
